@@ -41,6 +41,7 @@ public class RewardPointsController {
       // calculate reward points
       int points = RewardPointsUtil.calculatePoints(transaction.getTransactionAmount());
 
+
       // calculate month
       DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
       String month = transaction.getTransactionDate().format(formatter);
